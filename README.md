@@ -14,7 +14,7 @@ Go to http://wkhtmltopdf.org/ and install the `wkhtmltopdf` program.
 In `alfresco-global.properties` set `wkhtmltopdf.exe` to the path to
 the installed program, eg
 
-  wkhtmltopdf.exe=C:/Alfresco/wkhtmltopdf/bin/wkhtmltopdf.exe
+    wkhtmltopdf.exe=C:/Alfresco/wkhtmltopdf/bin/wkhtmltopdf.exe
 
 (the default) 
 
@@ -23,4 +23,4 @@ entire install directory into your Alfresco structure
 
 On Ubuntu Linux, you may want something like
 
-  wkhtmltopdf.exe=/usr/local/bin/wkhtmltopdf
+    wkhtmltopdf.exe=/usr/local/bin/wkhtmltopdf
