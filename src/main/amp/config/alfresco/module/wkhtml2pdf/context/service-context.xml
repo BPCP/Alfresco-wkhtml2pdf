@@ -24,10 +24,13 @@
     </property>
     <property name="checkCommand">
       <bean class="org.alfresco.util.exec.RuntimeExec">
-        <property name="commandMap">
+        <property name="commandsAndArguments">
           <map>
             <entry key=".*">
-              <value>${wkhtmltopdf.exe} -V</value>
+              <list>
+                <value>${wkhtmltopdf.exe}</value>
+                <value>-V</value>
+              </list>
             </entry>
           </map>
         </property>
@@ -41,7 +44,11 @@
         <property name="commandsAndArguments">
           <map>
             <entry key=".*">
-              <value>"${wkhtmltopdf.exe}" "${source}" "${target}"</value>
+              <list>
+                <value>${wkhtmltopdf.exe}</value>
+                <value>${source}</value>
+                <value>${target}</value>
+              </list>
             </entry>
           </map>
         </property>
